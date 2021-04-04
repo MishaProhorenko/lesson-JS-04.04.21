@@ -43,10 +43,21 @@ let arr = [1, 4, 67, 123, 55, 10, 11, 1000]
 // console.log(maxValue(arr))
 
 
-let maxValue = (a) => {
-    return Math.max(...a);   
-}
-console.log(maxValue(arr))
+// let maxValue = (a) => {
+//     return Math.max(...a);   
+// }
+// console.log(maxValue(arr))
+
+
+// let deleteElement = (a, b) => {
+//     // return a.slice(0, -b)
+//     return a.splice(0, a.length - b)
+// }
+
+// console.log(deleteElement(arr, 3))
+
+
+
 
 
 
