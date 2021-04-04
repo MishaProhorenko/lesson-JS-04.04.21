@@ -44,7 +44,7 @@ let arr = [1, 4, 67, 123, 55, 10, 11, 1000]
 
 
 let maxValue = (a) => {
-    return Math.max.apply(null, a);   
+    return Math.max(...a);   
 }
 console.log(maxValue(arr))
 
