@@ -19,14 +19,36 @@
 
 
 
-let createArr = (a, b) => {
-    let arr = []
-    for (let i = a; i <= b; i++) {
-        if(i % 2 !== 0){
-            arr.push(i)
-        }
-    }
-    return arr
-}
+// let getOddArray = (a, b) => {
+//     let arr = []
+//     for (let i = a; i <= b; i++) {
+//         if(i % 2 !== 0){
+//             arr.push(i)
+//         }
+//     }
+//     return arr
+// }
 
-console.log(createArr(15,25))
+// console.log(getOddArray(15,25))
+
+let arr = [1, 4, 67, 123, 55, 10, 11, 1000]
+
+// let maxValue = (a) => {
+//     a.sort((a, b) => {
+//         if (a > b) return -1
+//         if (a < b) return 1
+//     })
+//     return arr[0]
+// }
+// console.log(maxValue(arr))
+
+
+let maxValue = (a) => {
+    return Math.max.apply(null, a);   
+}
+console.log(maxValue(arr))
+
+
+
+
+
