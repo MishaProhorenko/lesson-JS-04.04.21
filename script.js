@@ -8,11 +8,25 @@
 
 
 
-let resultSum = (a, b) => {
-    let sum = 0;
+// let resultSum = (a, b) => {
+//     let sum = 0;
+//     for (let i = a; i <= b; i++) {
+//         sum += i;
+//     }
+//     return sum;
+// }
+// console.log(resultSum(15, 25))
+
+
+
+let createArr = (a, b) => {
+    let arr = []
     for (let i = a; i <= b; i++) {
-        sum += i;
+        if(i % 2 !== 0){
+            arr.push(i)
+        }
     }
-    return sum;
+    return arr
 }
-console.log(resultSum(15, 25))
+
+console.log(createArr(15,25))
