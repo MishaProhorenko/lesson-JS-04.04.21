@@ -31,7 +31,7 @@
 
 // console.log(getOddArray(15,25))
 
-let arr = [1, 4, 67, 123, 55, 10, 11, 1000]
+// let arr = [1, 4, 67, 123, 55, 10, 11, 1000]
 
 // let maxValue = (a) => {
 //     a.sort((a, b) => {
@@ -57,17 +57,28 @@ let arr = [1, 4, 67, 123, 55, 10, 11, 1000]
 // console.log(deleteElement(arr, 3))
 
 
-let str = 'Hello world'
+// let str = 'Hello world'
 
 
-let reverse = (a) => {
-    let result = a.split('').reverse().join('')
-    return result
+// let reverse = (a) => {
+//     let result = a.split('').reverse().join('')
+//     return result
+// }
+// console.log(reverse(str))
+
+
+let arraySemicopyChecker = (firstArray, secondArray) => {
+    if (firstArray.length < secondArray.length) {
+        const filteredArray = firstArray.filter(item => secondArray.includes(item));
+        return firstArray.length === filteredArray.length
+    } else {
+        const filteredArr = secondArray.filter(item => firstArray.includes(item));
+        return firstArray.length === filteredArr.length
+    }
 }
-console.log(reverse(str))
 
 
-
-
+console.log(arraySemicopyChecker([1, 2, 3], [1, 3, 4, 5]))
+console.log(arraySemicopyChecker([12, 3, 3, 3, 4, 5], [12, 3, 4, 5, 6, 73, 3]));
 
 
