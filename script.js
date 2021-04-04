@@ -57,6 +57,14 @@ let arr = [1, 4, 67, 123, 55, 10, 11, 1000]
 // console.log(deleteElement(arr, 3))
 
 
+let str = 'Hello world'
+
+
+let reverse = (a) => {
+    let result = a.split('').reverse().join('')
+    return result
+}
+console.log(reverse(str))
 
 
 
